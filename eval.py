@@ -1,4 +1,4 @@
-from data import *
+from train import *
 # improvement vs baseline
 rf_improvement_vs_baseline = (
     (baseline_mse - forest_mse) / baseline_mse

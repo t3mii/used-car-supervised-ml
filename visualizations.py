@@ -1,4 +1,4 @@
-from train import *
+from eval import *
 results = pd.DataFrame({
     "Model": ["Naive Baseline", "Linear Regression", "Random Forest"],
     "MSE": [baseline_mse, linear_mse, forest_mse]

@@ -30,8 +30,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
     test_size=0.2,
-    random_state=42
-)
+    random_state=42)
 
 
 #categorical variables to numerical values
@@ -42,8 +41,7 @@ preprocessor = ColumnTransformer([
     ("categorical",
      OneHotEncoder(
          handle_unknown="infrequent_if_exist",
-         min_frequency=20
-     ),
+         min_frequency=20),
      categorical_features),
 
     ("numerical",
