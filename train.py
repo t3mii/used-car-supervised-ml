@@ -36,8 +36,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 #categorical variables to numerical values
 numeric_transformer =SimpleImputer(
-    strategy="median"
-)
+    strategy="median")
 
 preprocessor = ColumnTransformer([
     ("categorical",
@@ -49,8 +48,7 @@ preprocessor = ColumnTransformer([
 
     ("numerical",
      "passthrough",
-     numeric_features)
-])
+     numeric_features)])
 X_train_encoded = preprocessor.fit_transform(X_train)
 X_test_encoded = preprocessor.transform(X_test)
 

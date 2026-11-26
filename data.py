@@ -3,10 +3,7 @@ columns = {"price", "year","manufacturer", "model","condition", "cylinders", "fu
 df = pd.read_csv("vehicles.csv", usecols=columns, low_memory=False)
 
 
-
-
 #cleaning
-
 original_size = len(df)
 
 #duplicates and NaN values
